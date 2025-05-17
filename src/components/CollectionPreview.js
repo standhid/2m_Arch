@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom"; 
 
 const artworks = [
-  { title: "Hermez", img: "https://via.placeholder.com/200", period: "Greek" },
-  { title: "Chopard", img: "https://via.placeholder.com/200", period: "Medieval" },
-  { title: "Isabel Marant", img: "https://via.placeholder.com/200", period: "18th Century" },
-  { title: "Jaipur Modern", img: "https://via.placeholder.com/200", period: "Modern" },
+  { title: "Hermez", img: "logo_hermez.png"},
+  { title: "Chopard", img: "logo_chopard.png"},
+  { title: "Isabel Marant", img: "logo_isabel_marant.png"},
+  { title: "Jaipur Modern", img: "logo_jaipur_modern.png"},
 ];
 
 const CollectionPreview = () => {

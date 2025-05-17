@@ -21,10 +21,10 @@ const brandTitles = {
     { id: 404, title: "Gold Drift", img: "/chopard/4.png" },
   ],
   "Isabel Marant": [
-    { id: 501, title: "Wild Petal", img: "/marant/1.jpg" },
-    { id: 502, title: "River Thread", img: "/marant/2.jpg" },
-    { id: 503, title: "Bohemian Glow", img: "/marant/3.jpg" },
-    { id: 504, title: "Crimson Root", img: "/marant/4.jpg" },
+    { id: 501, title: "Wild Petal", img: "/marant/1.png" },
+    { id: 502, title: "River Thread", img: "/marant/2.png" },
+    { id: 503, title: "Bohemian Glow", img: "/marant/3.png" },
+    { id: 504, title: "Crimson Root", img: "/marant/4.png" },
   ]
 };
 

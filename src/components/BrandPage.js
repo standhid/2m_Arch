@@ -3,33 +3,29 @@ import { useParams } from "react-router-dom";
 
 const brandTitles = {
   Hermez: [
-    { id: 201, title: "Golden Horizon" },
-    { id: 202, title: "Silk Road" },
-    { id: 203, title: "Leather Whisper" },
-    { id: 204, title: "Orchid Trail" },
-    { id: 205, title: "Amber Sky" }
+    { id: 201, title: "Golden Horizon", img: "/hermes/1.png" },
+    { id: 202, title: "Silk Road", img: "/hermes/2.png" },
+    { id: 203, title: "Leather Whisper", img: "/hermes/3.png" },
+    { id: 204, title: "Orchid Trail", img: "/hermes/4.png" },
   ],
   "Jaipur Modern": [
-    { id: 301, title: "Midnight Muse" },
-    { id: 302, title: "Ivory Pulse" },
-    { id: 303, title: "Velvet Noir" },
-    { id: 304, title: "Crimson Frost" },
-    { id: 305, title: "Eau Brillante" }
+    { id: 301, title: "Midnight Muse", img: "/jaipur/2.png" },
+    { id: 302, title: "Ivory Pulse", img: "/jaipur/3.png" },
+    { id: 303, title: "Velvet Noir", img: "/jaipur/4.png" },
+    { id: 304, title: "Crimson Frost", img: "/jaipur/5.png" },
   ],
   Chopard: [
-    { id: 401, title: "Sapphire Rain" },
-    { id: 402, title: "Diamond Echo" },
-    { id: 403, title: "Ruby Flame" },
-    { id: 404, title: "Gold Drift" },
-    { id: 405, title: "Emerald Soul" }
+    { id: 401, title: "Sapphire Rain", img: "/chopard/1.png" },
+    { id: 402, title: "Diamond Echo", img: "/chopard/2.png" },
+    { id: 403, title: "Ruby Flame", img: "/chopard/3.png" },
+    { id: 404, title: "Gold Drift", img: "/chopard/4.png" },
   ],
   "Isabel Marant": [
-    { id: 501, title: "Wild Petal" },
-    { id: 502, title: "River Thread" },
-    { id: 503, title: "Bohemian Glow" },
-    { id: 504, title: "Crimson Root" },
-    { id: 505, title: "Feathered Bloom" }
-  ],
+    { id: 501, title: "Wild Petal", img: "/marant/1.jpg" },
+    { id: 502, title: "River Thread", img: "/marant/2.jpg" },
+    { id: 503, title: "Bohemian Glow", img: "/marant/3.jpg" },
+    { id: 504, title: "Crimson Root", img: "/marant/4.jpg" },
+  ]
 };
 
 const BrandPage = () => {
@@ -53,6 +49,15 @@ const BrandPage = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-bar"
+          style={{
+            padding: "0.5rem 1rem",
+            width: "100%",
+            maxWidth: "600px",
+            fontSize: "1rem",
+            border: "1px solid #ccc",
+            borderRadius: "6px",
+            marginBottom: "1rem"
+          }}
         />
       </div>
 
@@ -70,6 +75,13 @@ const BrandPage = () => {
                 textAlign: "center"
               }}
             >
+              {item.img && (
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "4px", marginBottom: "0.5rem" }}
+                />
+              )}
               <h4>{item.title}</h4>
               <p>ID: {item.id}</p>
             </div>

@@ -30,12 +30,12 @@ const CollectionPreview = () => {
 
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill,minmax(200px,1fr))",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
           gap: "1rem",
         }}
       >
-        
         {filteredArtworks.length > 0 ? (
           filteredArtworks.map((art, i) => (
             <div
@@ -46,7 +46,7 @@ const CollectionPreview = () => {
                 padding: "1rem",
                 backgroundColor: "#fff",
                 width: "200px",
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
               <img
@@ -55,11 +55,13 @@ const CollectionPreview = () => {
                 style={{ width: "100%", borderRadius: "4px" }}
               />
               <h4>
-                <Link to={`/brand/${encodeURIComponent(art.title)}`}>
+                <Link
+                  to={`/brand/${encodeURIComponent(art.title)}`}
+                  style={{ color: "black", textDecoration: "none" }}
+                >
                   {art.title}
                 </Link>
               </h4>
-              <p>{art.period}</p>
             </div>
           ))
         ) : (

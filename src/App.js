@@ -14,6 +14,7 @@ function App() {
       <div className="App">
         <LogoBar />
         <Header />
+        <div className="main-content">
         <Routes>
           {/* Home page */}
           <Route
@@ -29,7 +30,8 @@ function App() {
           {/* Brand-specific page */}
           <Route path="/brand/:brandName" element={<BrandPage />} />
         </Routes>
-        <Footer />
+      </div>
+      <Footer />
       </div>
     </Router>
   );

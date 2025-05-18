@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => (
   <footer className="footer">
-    <p>© {new Date().getFullYear()} The Met Museum Clone</p>
+    <p>© {new Date().getFullYear()} 2M Archives</p>
   </footer>
 );
 

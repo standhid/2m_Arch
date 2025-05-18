@@ -20,12 +20,12 @@ const CollectionPreview = () => {
       <div style={{ textAlign: "center", marginBottom: "1rem" }}>
         <input
           type="text"
-          placeholder="Search artworks..."
+          placeholder="Search clients"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-bar"
         />
-        <h3>Featured Artworks</h3>
+        <h3>Featured Clients</h3>
       </div>
 
       <div

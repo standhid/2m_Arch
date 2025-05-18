@@ -5,9 +5,8 @@ const Header = () => (
     <h1>Archives</h1>
     <nav>
       <a href="/">Home</a>
-      <a href="/">Art</a>
-      <a href="/">Exhibitions</a>
-      <a href="/">Visit</a>
+      <a href="/">About Us</a>
+      <a href="/">Collection Areas</a>
     </nav>
   </header>
 );

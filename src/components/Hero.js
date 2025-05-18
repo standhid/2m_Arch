@@ -2,9 +2,7 @@ import React from "react";
 
 const Hero = () => (
   <section className="hero">
-    <h2>Explore Over 5000 Years of Art</h2>
-    <p>Discover pieces from around the world in The Met's vast collection.</p>
-    <button>Browse Collection</button>
+    <p>Discover more than 2,000 pieces from the 2M archival collection</p> 
   </section>
 );
 

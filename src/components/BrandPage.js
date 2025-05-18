@@ -83,7 +83,6 @@ const BrandPage = () => {
                 />
               )}
               <h4>{item.title}</h4>
-              <p>ID: {item.id}</p>
             </div>
           ))
         ) : (

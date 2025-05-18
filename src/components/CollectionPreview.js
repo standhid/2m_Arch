@@ -35,15 +35,18 @@ const CollectionPreview = () => {
           gap: "1rem",
         }}
       >
+        
         {filteredArtworks.length > 0 ? (
           filteredArtworks.map((art, i) => (
             <div
               key={i}
               style={{
-                border: "1px solid #ccc",
+                border: "1px solid #ddd",
                 borderRadius: "8px",
                 padding: "1rem",
                 backgroundColor: "#fff",
+                width: "200px",
+                textAlign: "center"
               }}
             >
               <img

@@ -32,12 +32,20 @@ const BrandPage = () => {
   const { brandName } = useParams();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSwatch, setSelectedSwatch] = useState(null);
+  const [activeTab, setActiveTab] = useState("Overview");
 
   const titlesForBrand = brandTitles[brandName] || [];
 
   const filteredTitles = titlesForBrand.filter((item) =>
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const tabContent = {
+    Overview: "This swatch represents a unique textile design from the collection, capturing the essence of the brand's seasonal palette.",
+    Provenance: "The material originated from artisanal workshops using locally sourced fibers and dyes passed through generations.",
+    "Exhibition History": "Previously exhibited at the Textile Biennale 2023 in Paris and the Design Expo 2022 in Milan.",
+    References: "Referenced in the book 'Modern Weaves' by Ana Salazar, pg. 152-153. Also featured in Vogue Interiors May 2023."
+  };
 
   return (
     <div style={{ padding: "2rem", backgroundColor: "#f9f9f9", minHeight: "80vh" }}>
@@ -49,7 +57,6 @@ const BrandPage = () => {
           placeholder="Search swatches"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-bar"
           style={{
             padding: "0.5rem 1rem",
             width: "100%",
@@ -67,7 +74,10 @@ const BrandPage = () => {
           filteredTitles.map((item) => (
             <div
               key={item.id}
-              onClick={() => setSelectedSwatch(item)}
+              onClick={() => {
+                setSelectedSwatch(item);
+                setActiveTab("Overview");
+              }}
               style={{
                 border: "1px solid #ddd",
                 borderRadius: "8px",
@@ -94,7 +104,7 @@ const BrandPage = () => {
         )}
       </div>
 
-      {/* Modal for enlarged swatch */}
+      {/* Modal with Tabs */}
       {selectedSwatch && (
         <div
           onClick={() => setSelectedSwatch(null)}
@@ -102,13 +112,13 @@ const BrandPage = () => {
             position: "fixed",
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
+            width: "100vw",
+            height: "100vh",
             backgroundColor: "rgba(0, 0, 0, 0.7)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            zIndex: 1000
+            zIndex: 999
           }}
         >
           <div
@@ -117,9 +127,10 @@ const BrandPage = () => {
               backgroundColor: "#fff",
               padding: "2rem",
               borderRadius: "8px",
-              maxWidth: "600px",
+              maxWidth: "700px",
               width: "90%",
-              textAlign: "center",
+              maxHeight: "90vh",
+              overflowY: "auto",
               position: "relative"
             }}
           >
@@ -137,15 +148,44 @@ const BrandPage = () => {
             >
               &times;
             </button>
+
             <img
               src={selectedSwatch.img}
               alt={selectedSwatch.title}
-              style={{ maxWidth: "100%", maxHeight: "400px", borderRadius: "4px", marginBottom: "1rem" }}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "300px",
+                objectFit: "contain",
+                borderRadius: "6px",
+                marginBottom: "1rem"
+              }}
             />
             <h3>{selectedSwatch.title}</h3>
-            <p style={{ color: "#555", fontSize: "0.95rem", marginTop: "0.5rem" }}>
-              This is a sample description of the swatch. Details about material, color, or origin can be added here.
-            </p>
+
+            {/* Tab Navigation */}
+            <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem", marginTop: "1rem", flexWrap: "wrap" }}>
+              {Object.keys(tabContent).map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  style={{
+                    padding: "0.5rem 1rem",
+                    border: "1px solid #ccc",
+                    borderRadius: "4px",
+                    backgroundColor: activeTab === tab ? "#333" : "#f0f0f0",
+                    color: activeTab === tab ? "#fff" : "#333",
+                    cursor: "pointer"
+                  }}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+
+            {/* Tab Content */}
+            <div style={{ color: "#555", fontSize: "0.95rem", lineHeight: "1.6" }}>
+              {tabContent[activeTab]}
+            </div>
           </div>
         </div>
       )}

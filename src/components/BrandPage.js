@@ -17,7 +17,7 @@ const brandTitles = {
   Chopard: [
     { id: 401, title: "Swatch 01", img: "/chopard/1.png" },
     { id: 402, title: "Swatch 02", img: "/chopard/2.png" },
-    { id: 403, title: "Swatch 02", img: "/chopard/3.png" },
+    { id: 403, title: "Swatch 03", img: "/chopard/3.png" },
     { id: 404, title: "Swatch 04", img: "/chopard/4.png" },
   ],
   "Isabel Marant": [
@@ -31,6 +31,7 @@ const brandTitles = {
 const BrandPage = () => {
   const { brandName } = useParams();
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedSwatch, setSelectedSwatch] = useState(null);
 
   const titlesForBrand = brandTitles[brandName] || [];
 
@@ -39,7 +40,7 @@ const BrandPage = () => {
   );
 
   return (
-    <div style={{ padding: "2rem", backgroundColor: "#f9f9f9" }}>
+    <div style={{ padding: "2rem", backgroundColor: "#f9f9f9", minHeight: "80vh" }}>
       <h2 style={{ textAlign: "center" }}>{brandName}</h2>
 
       <div style={{ textAlign: "center", margin: "1.5rem 0" }}>
@@ -66,13 +67,16 @@ const BrandPage = () => {
           filteredTitles.map((item) => (
             <div
               key={item.id}
+              onClick={() => setSelectedSwatch(item)}
               style={{
                 border: "1px solid #ddd",
                 borderRadius: "8px",
                 padding: "1rem",
                 backgroundColor: "#fff",
                 width: "200px",
-                textAlign: "center"
+                textAlign: "center",
+                cursor: "pointer",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
               }}
             >
               {item.img && (
@@ -89,6 +93,62 @@ const BrandPage = () => {
           <p>No matching titles found.</p>
         )}
       </div>
+
+      {/* Modal for enlarged swatch */}
+      {selectedSwatch && (
+        <div
+          onClick={() => setSelectedSwatch(null)}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              backgroundColor: "#fff",
+              padding: "2rem",
+              borderRadius: "8px",
+              maxWidth: "600px",
+              width: "90%",
+              textAlign: "center",
+              position: "relative"
+            }}
+          >
+            <button
+              onClick={() => setSelectedSwatch(null)}
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "10px",
+                border: "none",
+                background: "none",
+                fontSize: "1.5rem",
+                cursor: "pointer"
+              }}
+            >
+              &times;
+            </button>
+            <img
+              src={selectedSwatch.img}
+              alt={selectedSwatch.title}
+              style={{ maxWidth: "100%", maxHeight: "400px", borderRadius: "4px", marginBottom: "1rem" }}
+            />
+            <h3>{selectedSwatch.title}</h3>
+            <p style={{ color: "#555", fontSize: "0.95rem", marginTop: "0.5rem" }}>
+              This is a sample description of the swatch. Details about material, color, or origin can be added here.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

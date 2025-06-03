@@ -41,14 +41,28 @@ const BrandPage = () => {
   );
 
   const tabContent = {
-    Overview: "This swatch represents a unique textile design from the collection, capturing the essence of the brand's seasonal palette.",
-    Provenance: "The material originated from artisanal workshops using locally sourced fibers and dyes passed through generations.",
-    "Exhibition History": "Previously exhibited at the Textile Biennale 2023 in Paris and the Design Expo 2022 in Milan.",
-    References: "Referenced in the book 'Modern Weaves' by Ana Salazar, pg. 152-153. Also featured in Vogue Interiors May 2023."
+    Overview: `**Title:** Sachihongo Mask
+**Artist:** Mbunda artist
+**Date:** 19th–early 20th century
+**Geography:** Zambia
+**Culture:** Mbunda
+**Medium:** Wood, pigment(?)
+**Dimensions:** H. 17 × W. 12 × D. 10 in. (43.2 × 30.5 × 25.4 cm)
+**Classification:** Wood
+**Credit Line:** Purchase, Lila Acheson Wallace, Anonymous, Dr. and Mrs. Sidney G. Clyman, The Katcher Family Foundation Inc., Steven Kossak, and Holly and David Ross Gifts, 2016
+**Object Number:** 2016.106`,
+    Provenance: `Mbunda people, Zambia.
+Acquired by a private collector in the mid-20th century.
+Gifted to the institution in 2016.`,
+    "Exhibition History": `“Art of Zambia” - Metropolitan Museum, 2017
+“Voices of Africa” - Brooklyn Museum, 2019-2020`,
+    References: `1. African Art and Culture, Smith & Ngozi, 2015
+2. Museum Catalog Entry 2016.106
+3. Exhibition Archives - Metropolitan Museum`
   };
 
   return (
-    <div style={{ padding: "2rem", backgroundColor: "#f9f9f9", minHeight: "80vh" }}>
+    <div style={{ padding: "2rem", backgroundColor: "#f9f9f9" }}>
       <h2 style={{ textAlign: "center" }}>{brandName}</h2>
 
       <div style={{ textAlign: "center", margin: "1.5rem 0" }}>
@@ -85,17 +99,14 @@ const BrandPage = () => {
                 backgroundColor: "#fff",
                 width: "200px",
                 textAlign: "center",
-                cursor: "pointer",
-                boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+                cursor: "pointer"
               }}
             >
-              {item.img && (
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "4px", marginBottom: "0.5rem" }}
-                />
-              )}
+              <img
+                src={item.img}
+                alt={item.title}
+                style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "4px", marginBottom: "0.5rem" }}
+              />
               <h4>{item.title}</h4>
             </div>
           ))
@@ -104,7 +115,6 @@ const BrandPage = () => {
         )}
       </div>
 
-      {/* Modal with Tabs */}
       {selectedSwatch && (
         <div
           onClick={() => setSelectedSwatch(null)}
@@ -114,7 +124,7 @@ const BrandPage = () => {
             left: 0,
             width: "100vw",
             height: "100vh",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -127,10 +137,11 @@ const BrandPage = () => {
               backgroundColor: "#fff",
               padding: "2rem",
               borderRadius: "8px",
-              maxWidth: "700px",
+              maxWidth: "900px",
               width: "90%",
-              maxHeight: "90vh",
-              overflowY: "auto",
+              height: "90vh",
+              display: "flex",
+              flexDirection: "column",
               position: "relative"
             }}
           >
@@ -157,34 +168,53 @@ const BrandPage = () => {
                 maxHeight: "300px",
                 objectFit: "contain",
                 borderRadius: "6px",
-                marginBottom: "1rem"
+                marginBottom: "1rem",
+                alignSelf: "center"
               }}
             />
-            <h3>{selectedSwatch.title}</h3>
+            <p style={{ textAlign: "center", fontSize: "0.95rem", color: "#777", marginBottom: "1.5rem" }}>
+              This is a swatch detail view from the {brandName} collection.
+            </p>
 
-            {/* Tab Navigation */}
-            <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem", marginTop: "1rem", flexWrap: "wrap" }}>
-              {Object.keys(tabContent).map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  style={{
-                    padding: "0.5rem 1rem",
-                    border: "1px solid #ccc",
-                    borderRadius: "4px",
-                    backgroundColor: activeTab === tab ? "#333" : "#f0f0f0",
-                    color: activeTab === tab ? "#fff" : "#333",
-                    cursor: "pointer"
-                  }}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+            <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
+              {/* Sidebar Tabs */}
+              <div style={{ width: "200px", borderRight: "1px solid #ccc" }}>
+                {Object.keys(tabContent).map((tab) => (
+                  <div
+                    key={tab}
+                    onClick={() => setActiveTab(tab)}
+                    style={{
+                      padding: "1rem",
+                      cursor: "pointer",
+                      backgroundColor: activeTab === tab ? "#f5f5f5" : "transparent",
+                      borderLeft: activeTab === tab ? "4px solid black" : "4px solid transparent",
+                      fontWeight: activeTab === tab ? "bold" : "normal"
+                    }}
+                  >
+                    {tab}
+                  </div>
+                ))}
+              </div>
 
-            {/* Tab Content */}
-            <div style={{ color: "#555", fontSize: "0.95rem", lineHeight: "1.6" }}>
-              {tabContent[activeTab]}
+              {/* Tab Content */}
+              <div style={{ flex: 1, padding: "1rem 1.5rem", overflowY: "auto" }}>
+                {tabContent[activeTab]
+                  .split("\n")
+                  .map((line, idx) => {
+                    const parts = line.split("**");
+                    return (
+                      <p key={idx} style={{ marginBottom: "0.75rem" }}>
+                        {parts.length === 3 ? (
+                          <>
+                            <strong>{parts[1]}</strong>: {parts[2]}
+                          </>
+                        ) : (
+                          line
+                        )}
+                      </p>
+                    );
+                  })}
+              </div>
             </div>
           </div>
         </div>

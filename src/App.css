@@ -31,6 +31,7 @@ html, body, #root{
 .header h1{
   font-size: 1.2rem;        
   margin: 0;
+  margin-left: 0.5rem;
 }
 .header nav a {
   color: white;
@@ -90,7 +91,7 @@ html, body, #root{
 }
 
 .logo-img {
-  max-height: 80px;
+  max-height: 50px;
   object-fit: contain;
 }
 .collection-header {

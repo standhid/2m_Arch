@@ -17,7 +17,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Hermez’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 202, title: "Swatch 02", img: "/hermes/2.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -33,7 +33,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Hermez’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 203, title: "Swatch 03", img: "/hermes/3.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -49,7 +49,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Hermez’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 204, title: "Swatch 04", img: "/hermes/4.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -65,7 +65,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Hermez’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
   ],
   "Jaipur Modern": [
@@ -83,7 +83,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Jaipur Modern’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 302, title: "Swatch 02", img: "/jaipur/3.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -99,7 +99,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Jaipur Modern’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 303, title: "Swatch 03", img: "/jaipur/4.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -115,7 +115,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Jaipur Modern’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 304, title: "Swatch 04", img: "/jaipur/5.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -131,7 +131,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Jaipur Modern’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
   ],
   Chopard: [
@@ -149,7 +149,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Chopard’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 402, title: "Swatch 02", img: "/chopard/2.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -165,7 +165,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Chopard’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 403, title: "Swatch 03", img: "/chopard/3.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -181,7 +181,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Chopard’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 404, title: "Swatch 04", img: "/chopard/4.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -197,7 +197,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Chopard’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
   ],
   "Isabel Marant": [
@@ -215,7 +215,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Isabel Marant’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 502, title: "Swatch 02", img: "/marant/2.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -231,7 +231,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Isabel Marant’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 503, title: "Swatch 03", img: "/marant/3.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -247,7 +247,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Isabel Marant’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
     { id: 504, title: "Swatch 04", img: "/marant/4.png",tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
@@ -263,7 +263,7 @@ const brandTitles = {
 **Base Fabric**: Cotton-silk blend
 **Thread Type**: Metallic and cotton
 **Embellishments**: None`,
-        Notes: `This swatch marked the beginning of Isabel Marant’s return to classic weave traditions.`
+        Notes: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
       } },
   ]
 };

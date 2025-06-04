@@ -388,10 +388,10 @@ const BrandPage = () => {
                 objectFit: "contain",
                 borderRadius: "6px",
                 marginBottom: "1rem",
-                alignSelf: "flex-start"
+                alignSelf: "center"
               }}
             />
-            <p style={{ textAlign: "left", fontSize: "0.95rem", color: "#777", marginBottom: "1.5rem" }}>
+            <p style={{ textAlign: "center", fontSize: "0.95rem", color: "#777", marginBottom: "1.5rem" }}>
               This is a swatch detail view from the {brandName} collection.
             </p>
 

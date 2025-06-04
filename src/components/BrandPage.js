@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 const brandTitles = {
-  Hermez: [
+  Hermes: [
     { id: 201, title: "Swatch 01", img: "/hermes/1.png", tabContent: {
         "Inventory Details": `**Accession Number**: HZ201-A1
 **Shelf Location**: Bay 3, Shelf B`,
@@ -392,7 +392,7 @@ const BrandPage = () => {
               }}
             />
             <p style={{ textAlign: "left", fontSize: "0.95rem", color: "#777", marginBottom: "1.5rem" }}>
-              This is a swatch detail view from the {brandName} collection.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
             </p>
 
             <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>

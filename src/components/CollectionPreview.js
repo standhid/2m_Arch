@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom"; 
 
 const artworks = [
-  { title: "Hermez", img: "logo_hermez.png"},
+  { title: "Hermes", img: "logo_hermez.png"},
   { title: "Chopard", img: "logo_chopard.png"},
   { title: "Isabel Marant", img: "logo_isabel_marant.png"},
   { title: "Jaipur Modern", img: "/jaipur/1.png"},
